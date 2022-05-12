@@ -2,6 +2,13 @@
 @{
     Layout = null;
 }
-
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 <h1>Yeni Kategori Ekle</h1>
 <br />
+<form class="form-group" method="post">
+    <input type="text" name="CategoryName" placeholder="Kategori Adı" class="form-control" />
+    <br />
+    <input type="text" name="CategoryDescription" placeholder="Açıklama" class="form-control" />
+    <br />
+    <button class="btn btn-primary">Ekle</button>
+</form>
