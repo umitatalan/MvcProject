@@ -7,22 +7,3 @@
 
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 <br />
-<table class="table table-bordered table-hover">
-    <tr>
-        <th>ID</th>
-        <th>Ad</th>
-        <th>Açıklama</th>
-        <th>Durum</th>
-    </tr>
-    @foreach(var item in Model)
-    {
-        <tr>
-            <td>@item.CategoryID</td>
-            <td>@item.CategoryName</td>
-            <td>@item.CategoryDescription</td>
-            <td>@item.CategortStatus</td>
-        </tr>
-    }
-</table>
-<br />
-<a href="/Category/AddCategory" class="btn btn-success">Yeni Kategori</a>
