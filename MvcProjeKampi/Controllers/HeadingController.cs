@@ -13,6 +13,7 @@ namespace MvcProjeKampi.Controllers
     {
         HeadingManager headingManager = new HeadingManager(new EfHeadingDal());
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+        WriterManager writerManager = new WriterManager(new EfWriterDal());
         public ActionResult Index()
         {
             var headingList = headingManager.GetHeadings();
@@ -27,7 +28,14 @@ namespace MvcProjeKampi.Controllers
                                                    Value = x.CategoryID.ToString(),
                                                    Text = x.CategoryName
                                                }).ToList();
+            List<SelectListItem> writers = (from x in writerManager.GetWriters()
+                                            select new SelectListItem
+                                            {
+                                                Value = x.WriterID.ToString(),
+                                                Text = x.WriterName + " " + x.WriterSurname
+                                            }).ToList();
             ViewBag.categories = categories;
+            ViewBag.writers = writers;
             return View();
         }
         [HttpPost]

@@ -13,6 +13,7 @@
         <th>ID</th>
         <td>Başlık Adı</td>
         <td>Kategori</td>
+        <td>Yazar</td>
     </tr>
     @foreach (var item in Model)
     {
@@ -20,6 +21,7 @@
             <td>@item.HeadingID</td>
             <td>@item.HeadingName</td>
             <td>@item.Category.CategoryName</td>
+            <td>@item.Writer.WriterName @item.Writer.WriterSurname</td>
         </tr>
     }
 </table>
