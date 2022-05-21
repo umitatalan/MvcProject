@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{15898399-CE61-4EAD-BB17-C99462340EE5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "screens", "screens", "{7CA66084-1DBE-472B-BD7F-9209FC6BE056}"
+	ProjectSection(SolutionItems) = preProject
+		MvcProjeKampi\Views\Ekran Alıntısı.PNG = MvcProjeKampi\Views\Ekran Alıntısı.PNG
+		D:\heading-screen.PNG = D:\heading-screen.PNG
+		MvcProjeKampi\Views\Writer\WriterScreen.PNG = MvcProjeKampi\Views\Writer\WriterScreen.PNG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
