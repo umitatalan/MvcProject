@@ -46,9 +46,6 @@ namespace MvcProjeKampi.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult ContentByHeading()
-        {
-            return View();
-        }
+        
     }
 }
