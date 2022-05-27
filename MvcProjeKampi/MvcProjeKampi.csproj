@@ -2303,6 +2303,7 @@
     <Content Include="Views\Message\Inbox.cshtml" />
     <Content Include="Views\Message\Sendbox.cshtml" />
     <Content Include="Views\Message\AddMessage.cshtml" />
+    <Content Include="Views\Message\GetInBoxMessageDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
